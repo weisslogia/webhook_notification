@@ -4,7 +4,7 @@ const axios = require('axios')
 const bodyParser = require('body-parser')
 const app = express()
 
-const PORT = process.env.PORT ?? 3000;
+const PORT = process.env.PORT ?? 9090;
 /** Midlewares */
 app.use(bodyParser.json({ limit: '10mb' }));
 app.use((_, res, next) => {
